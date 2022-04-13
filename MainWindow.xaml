@@ -1,0 +1,26 @@
+﻿<Window x:Class="client_Ari.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:client_Ari"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="submit" Content="Button" Margin="406,163,276,176" RenderTransformOrigin="0.5,0.5" Click="submit_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.49"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="val1_txtbox" Margin="10,165,565,0" TextWrapping="Wrap" Height="41" VerticalAlignment="Top" TextChanged="validate_decimal"/>
+        <TextBox x:Name="val2_txtbox" Margin="10,217,565,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" TextChanged="validate_decimal"/>
+        <TextBox x:Name="result_txtbox" Margin="540,165,35,176" TextWrapping="Wrap" Text="TextBox"/>
+        <ComboBox x:Name="operator_combobox" Margin="252,165,426,176" SelectedValuePath="Content"/>
+
+    </Grid>
+</Window>
